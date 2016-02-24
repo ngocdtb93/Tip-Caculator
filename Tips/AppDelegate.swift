@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        if (userDefault.objectForKey("dateTimeQuitApp") != nil){
+            let currentDateTime = NSDate()
+            let dateTimeQuitApp = userDefault.objectForKey("dateTimeQuitApp") as! NSDate
+            if((currentDateTime.timeIntervalSince1970 - (dateTimeQuitApp.timeIntervalSince1970)) > 600){//10m = 60 000 second)
+                userDefault.removeObjectForKey("totalBill")
+            }
+        }
         return true
     }
 
@@ -38,7 +45,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        let currentDateTime = NSDate()
+        userDefault.setObject(currentDateTime, forKey: "dateTimeQuitApp")
     }
 
 

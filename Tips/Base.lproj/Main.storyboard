@@ -1,25 +1,1014 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cdg-y1-BbV">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tips Caculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Tips" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skype.png" translatesAutoresizingMaskIntoConstraints="NO" id="JKO-DY-TVe">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-sunny-cloud-4" translatesAutoresizingMaskIntoConstraints="NO" id="ter-16-DtS" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="0.0" y="316" width="96" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="aE0-MO-GF9"/>
+                                    <constraint firstAttribute="width" constant="96" id="hrg-9D-gTY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-sunny-cloud-2" translatesAutoresizingMaskIntoConstraints="NO" id="jFE-gk-HQq" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="241" y="229" width="96" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="MCy-NN-NY9"/>
+                                    <constraint firstAttribute="width" constant="96" id="Pmq-hC-mU4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.59999999999999998"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-sunny-cloud-3" translatesAutoresizingMaskIntoConstraints="NO" id="1Cg-mV-zvu" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="195" y="510" width="96" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Y4H-eR-D8L"/>
+                                    <constraint firstAttribute="width" constant="96" id="yBA-Xe-cEc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-sunny-cloud-1" translatesAutoresizingMaskIntoConstraints="NO" id="07E-hp-KCq" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="58" y="48" width="96" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="bYA-5G-BBn"/>
+                                    <constraint firstAttribute="width" constant="96" id="uzR-Dg-nci"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.90000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Usl-gL-2SY">
+                                <rect key="frame" x="16" y="100" width="288" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7s0-0O-UJK"/>
+                                </constraints>
+                                <color key="textColor" red="0.24963164242539393" green="0.78129266885983972" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="textfieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="zrQ-aB-WiJ"/>
+                                    <action selector="touchToEdit:" destination="BYZ-38-t0r" eventType="touchDown" id="ly6-cJ-K0z"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ylj-cG-Ixb">
+                                <rect key="frame" x="16" y="153" width="288" height="3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="aCU-CG-A7X"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ud0-Lc-ggW" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="16" y="105" width="89" height="40"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                <color key="textColor" red="0.24963164239999999" green="0.78129266890000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeDown"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="TRX-XB-9aR" appends="YES" id="MMb-KO-Pl4"/>
+                                </connections>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3Oy-eY-tfV">
+                                <rect key="frame" x="16" y="172" width="288" height="29"/>
+                                <color key="backgroundColor" red="0.4039215686" green="0.6588235294" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="10%"/>
+                                    <segment title="15%"/>
+                                    <segment title="18%"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="textfieldChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Xgb-ul-h9K"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEM-Cd-ib1" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="16" y="216" width="74" height="24"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeLeft"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkz-Ac-GPV" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="8" y="415" width="304" height="69"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people" translatesAutoresizingMaskIntoConstraints="NO" id="GW5-bl-NR1">
+                                        <rect key="frame" x="8" y="25" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="0pu-IR-wzy"/>
+                                            <constraint firstAttribute="height" constant="20" id="bZe-Yf-qh3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people" translatesAutoresizingMaskIntoConstraints="NO" id="vlS-m2-FqL">
+                                        <rect key="frame" x="31" y="25" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="WbT-cl-qJ2"/>
+                                            <constraint firstAttribute="width" constant="20" id="b44-dc-i4h"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people" translatesAutoresizingMaskIntoConstraints="NO" id="L5c-fg-ype">
+                                        <rect key="frame" x="54" y="25" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="2gd-gL-nmO"/>
+                                            <constraint firstAttribute="height" constant="20" id="v4L-Ap-Gm1"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="vlS-m2-FqL" firstAttribute="baseline" secondItem="GW5-bl-NR1" secondAttribute="baseline" id="7yH-6b-g8E"/>
+                                    <constraint firstItem="GW5-bl-NR1" firstAttribute="centerY" secondItem="xkz-Ac-GPV" secondAttribute="centerY" id="ICY-gA-4rP"/>
+                                    <constraint firstItem="vlS-m2-FqL" firstAttribute="leading" secondItem="GW5-bl-NR1" secondAttribute="trailing" constant="3" id="Idj-d4-Wyg"/>
+                                    <constraint firstItem="L5c-fg-ype" firstAttribute="leading" secondItem="vlS-m2-FqL" secondAttribute="trailing" constant="3" id="QaK-dX-HdQ"/>
+                                    <constraint firstItem="L5c-fg-ype" firstAttribute="baseline" secondItem="vlS-m2-FqL" secondAttribute="baseline" id="Vmm-C9-VyT"/>
+                                    <constraint firstItem="GW5-bl-NR1" firstAttribute="leading" secondItem="xkz-Ac-GPV" secondAttribute="leading" constant="8" id="bZ7-TH-2k6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="damping">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeUp"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaR-30-uqc" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="8" y="496" width="304" height="69"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people" translatesAutoresizingMaskIntoConstraints="NO" id="9U9-qg-04n">
+                                        <rect key="frame" x="42" y="23" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="B4I-Bn-35B"/>
+                                            <constraint firstAttribute="width" constant="20" id="NIK-OT-Mxp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 x " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYq-3k-e2D">
+                                        <rect key="frame" x="8" y="21" width="31" height="28"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="9U9-qg-04n" firstAttribute="baseline" secondItem="pYq-3k-e2D" secondAttribute="baseline" id="AAm-T3-e2X"/>
+                                    <constraint firstAttribute="height" constant="65" id="Yom-iq-e9e"/>
+                                    <constraint firstItem="pYq-3k-e2D" firstAttribute="centerY" secondItem="eaR-30-uqc" secondAttribute="centerY" id="mWt-ez-AWp"/>
+                                    <constraint firstItem="pYq-3k-e2D" firstAttribute="leading" secondItem="eaR-30-uqc" secondAttribute="leading" constant="8" id="txP-FI-gyB"/>
+                                    <constraint firstItem="9U9-qg-04n" firstAttribute="leading" secondItem="pYq-3k-e2D" secondAttribute="trailing" constant="3" id="vBg-et-nzc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.59999999999999998"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="damping">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeUp"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Yom-iq-e9e"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ul-Za-mGK" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="255" y="216" width="49" height="24"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeRight"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZwV-MC-lCy" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="8" y="253" width="304" height="69"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people" translatesAutoresizingMaskIntoConstraints="NO" id="vC2-LX-cAQ">
+                                        <rect key="frame" x="8" y="25" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="O1d-k3-4aW"/>
+                                            <constraint firstAttribute="height" constant="20" id="x6R-dP-WSy"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="vC2-LX-cAQ" firstAttribute="centerY" secondItem="ZwV-MC-lCy" secondAttribute="centerY" id="99o-4b-Es6"/>
+                                    <constraint firstItem="vC2-LX-cAQ" firstAttribute="leading" secondItem="ZwV-MC-lCy" secondAttribute="leading" constant="8" id="aWd-cw-cX1"/>
+                                    <constraint firstItem="vC2-LX-cAQ" firstAttribute="centerY" secondItem="ZwV-MC-lCy" secondAttribute="centerY" id="dbH-17-ViQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeUp"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                        <real key="value" value="0.59999999999999998"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="damping">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dbH-17-ViQ"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFd-wk-Nwa" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="8" y="334" width="304" height="69"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people" translatesAutoresizingMaskIntoConstraints="NO" id="Wrw-lz-sHO">
+                                        <rect key="frame" x="8" y="25" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="SnR-Hf-EFn"/>
+                                            <constraint firstAttribute="height" constant="20" id="kpm-Qg-qs5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people" translatesAutoresizingMaskIntoConstraints="NO" id="KAW-7I-HxZ">
+                                        <rect key="frame" x="31" y="25" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="6Hv-oP-2HO"/>
+                                            <constraint firstAttribute="height" constant="20" id="SZz-T9-hNM"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="KAW-7I-HxZ" firstAttribute="baseline" secondItem="Wrw-lz-sHO" secondAttribute="baseline" id="LJy-ZL-FlN"/>
+                                    <constraint firstItem="KAW-7I-HxZ" firstAttribute="leading" secondItem="Wrw-lz-sHO" secondAttribute="trailing" constant="3" id="Na9-jB-WxB"/>
+                                    <constraint firstItem="Wrw-lz-sHO" firstAttribute="centerY" secondItem="BFd-wk-Nwa" secondAttribute="centerY" id="oPf-pJ-yaj"/>
+                                    <constraint firstItem="Wrw-lz-sHO" firstAttribute="leading" secondItem="BFd-wk-Nwa" secondAttribute="leading" constant="8" id="zfu-WY-TUe"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeUp"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAR-qQ-NeF" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="225" y="267" width="79" height="39"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeIn"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                        <real key="value" value="360"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bi-Cj-wPa" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="235" y="352" width="69" height="34"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
+                                <color key="textColor" red="0.92941176469999998" green="0.33333333329999998" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.59999999999999998"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHJ-Yq-9DF" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="245" y="437" width="59" height="29"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.58671304048038198" blue="0.22447169586105575" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.69999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V92-l9-oQh" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="255" y="520" width="49" height="24"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.84373219972366142" blue="0.063915218258024376" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOw-dD-U6h" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="262" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hw3-gC-kSJ"/>
+                                    <constraint firstAttribute="width" constant="50" id="rIa-Gq-YbI"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" image="setting"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                        <real key="value" value="360"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="repeatCount">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="App-5s-gn1" kind="push" id="3ou-a8-vxB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1Cg-mV-zvu" secondAttribute="trailing" constant="29" id="28G-9t-9kj"/>
+                            <constraint firstItem="ud0-Lc-ggW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="8T6-61-Czg"/>
+                            <constraint firstItem="07E-hp-KCq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="42" id="8XN-oX-zLL"/>
+                            <constraint firstAttribute="trailing" secondItem="BFd-wk-Nwa" secondAttribute="trailing" constant="8" id="9c8-wb-fqo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eaR-30-uqc" secondAttribute="bottom" constant="16" id="9tR-br-BGT"/>
+                            <constraint firstItem="BFd-wk-Nwa" firstAttribute="height" secondItem="ZwV-MC-lCy" secondAttribute="height" id="A9i-BJ-MII"/>
+                            <constraint firstAttribute="trailing" secondItem="uAR-qQ-NeF" secondAttribute="trailing" constant="16" id="At5-WU-7ux"/>
+                            <constraint firstAttribute="trailing" secondItem="0ul-Za-mGK" secondAttribute="trailing" constant="16" id="Bpf-TR-CQO"/>
+                            <constraint firstAttribute="trailing" secondItem="gHJ-Yq-9DF" secondAttribute="trailing" constant="16" id="Cbg-kj-pae"/>
+                            <constraint firstItem="DOw-dD-U6h" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="HvD-f6-tLN"/>
+                            <constraint firstAttribute="trailing" secondItem="ZwV-MC-lCy" secondAttribute="trailing" constant="8" id="ItB-rj-cQu"/>
+                            <constraint firstItem="xkz-Ac-GPV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="JG3-dF-6Pb"/>
+                            <constraint firstItem="BFd-wk-Nwa" firstAttribute="top" secondItem="ZwV-MC-lCy" secondAttribute="bottom" constant="12" id="KjR-Hk-KaW"/>
+                            <constraint firstItem="3Oy-eY-tfV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="L3i-rO-Yh8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JKO-DY-TVe" secondAttribute="bottom" id="MT9-3z-WPP"/>
+                            <constraint firstItem="eaR-30-uqc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Naf-qQ-qde"/>
+                            <constraint firstAttribute="trailing" secondItem="DOw-dD-U6h" secondAttribute="trailing" constant="8" id="OOl-E4-yYi"/>
+                            <constraint firstAttribute="trailing" secondItem="eaR-30-uqc" secondAttribute="trailing" constant="8" id="Pqx-G2-hbb"/>
+                            <constraint firstItem="0ul-Za-mGK" firstAttribute="top" secondItem="3Oy-eY-tfV" secondAttribute="bottom" constant="16" id="Q4v-dY-BFF"/>
+                            <constraint firstItem="8Bi-Cj-wPa" firstAttribute="baseline" secondItem="Wrw-lz-sHO" secondAttribute="baseline" id="QcF-w9-Hhw"/>
+                            <constraint firstItem="eaR-30-uqc" firstAttribute="top" secondItem="xkz-Ac-GPV" secondAttribute="bottom" constant="16" id="Qeu-En-Pvx"/>
+                            <constraint firstItem="Usl-gL-2SY" firstAttribute="top" secondItem="DOw-dD-U6h" secondAttribute="bottom" constant="30" id="Qn6-Px-ISj"/>
+                            <constraint firstItem="gHJ-Yq-9DF" firstAttribute="baseline" secondItem="GW5-bl-NR1" secondAttribute="baseline" id="Qvn-H1-vSu"/>
+                            <constraint firstItem="ter-16-DtS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T4S-Re-raO"/>
+                            <constraint firstAttribute="trailing" secondItem="JKO-DY-TVe" secondAttribute="trailing" id="TOs-oK-Fr1"/>
+                            <constraint firstAttribute="trailing" secondItem="Ylj-cG-Ixb" secondAttribute="trailing" constant="16" id="VKN-NB-r9I"/>
+                            <constraint firstItem="ud0-Lc-ggW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Vbw-dR-2Xw"/>
+                            <constraint firstItem="3Oy-eY-tfV" firstAttribute="top" secondItem="Ylj-cG-Ixb" secondAttribute="bottom" constant="16" id="WZQ-Ov-4af"/>
+                            <constraint firstItem="uAR-qQ-NeF" firstAttribute="baseline" secondItem="vC2-LX-cAQ" secondAttribute="baseline" id="YL6-az-1sw"/>
+                            <constraint firstItem="jFE-gk-HQq" firstAttribute="top" secondItem="DOw-dD-U6h" secondAttribute="bottom" constant="159" id="Z3i-lf-ujr"/>
+                            <constraint firstItem="BFd-wk-Nwa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="ZFo-dl-D1I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jFE-gk-HQq" secondAttribute="trailing" constant="-33" id="ak0-NN-ILP"/>
+                            <constraint firstItem="hEM-Cd-ib1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="bS8-Wa-ps6"/>
+                            <constraint firstItem="Ylj-cG-Ixb" firstAttribute="top" secondItem="Usl-gL-2SY" secondAttribute="bottom" constant="3" id="cL7-rp-PfP"/>
+                            <constraint firstAttribute="trailing" secondItem="xkz-Ac-GPV" secondAttribute="trailing" constant="8" id="eCn-6p-pxy"/>
+                            <constraint firstItem="xkz-Ac-GPV" firstAttribute="top" secondItem="JKO-DY-TVe" secondAttribute="bottom" constant="-162" id="egI-RT-r3O"/>
+                            <constraint firstItem="Ylj-cG-Ixb" firstAttribute="top" secondItem="ud0-Lc-ggW" secondAttribute="bottom" constant="8" id="euP-KI-XZj"/>
+                            <constraint firstItem="Usl-gL-2SY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="fJA-LJ-9vR"/>
+                            <constraint firstItem="JKO-DY-TVe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gcF-2o-jWP"/>
+                            <constraint firstItem="xkz-Ac-GPV" firstAttribute="height" secondItem="ZwV-MC-lCy" secondAttribute="height" id="goM-nH-M4G"/>
+                            <constraint firstItem="V92-l9-oQh" firstAttribute="baseline" secondItem="pYq-3k-e2D" secondAttribute="baseline" id="jHm-G9-8Cg"/>
+                            <constraint firstItem="xkz-Ac-GPV" firstAttribute="top" secondItem="BFd-wk-Nwa" secondAttribute="bottom" constant="12" id="jV1-Xc-7be"/>
+                            <constraint firstAttribute="trailing" secondItem="3Oy-eY-tfV" secondAttribute="trailing" constant="16" id="lV4-X6-TTK"/>
+                            <constraint firstItem="07E-hp-KCq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="mPO-vi-PTc"/>
+                            <constraint firstItem="JKO-DY-TVe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mzS-WJ-7AO"/>
+                            <constraint firstItem="eaR-30-uqc" firstAttribute="top" secondItem="xkz-Ac-GPV" secondAttribute="bottom" constant="12" id="ntV-dv-y0C"/>
+                            <constraint firstItem="ZwV-MC-lCy" firstAttribute="top" secondItem="0ul-Za-mGK" secondAttribute="bottom" constant="13" id="o0E-dE-Krl"/>
+                            <constraint firstItem="eaR-30-uqc" firstAttribute="height" secondItem="ZwV-MC-lCy" secondAttribute="height" id="o6R-A8-fHd"/>
+                            <constraint firstItem="3Oy-eY-tfV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oLC-R0-P59"/>
+                            <constraint firstAttribute="trailing" secondItem="Usl-gL-2SY" secondAttribute="trailing" constant="16" id="pjU-tU-KNW"/>
+                            <constraint firstItem="hEM-Cd-ib1" firstAttribute="top" secondItem="3Oy-eY-tfV" secondAttribute="bottom" constant="16" id="w29-VA-FAh"/>
+                            <constraint firstAttribute="trailing" secondItem="V92-l9-oQh" secondAttribute="trailing" constant="16" id="whs-CM-CR5"/>
+                            <constraint firstAttribute="bottom" secondItem="1Cg-mV-zvu" secondAttribute="bottom" constant="-5" id="x0Z-be-9dX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ter-16-DtS" secondAttribute="bottom" constant="189" id="xOt-SC-iCP"/>
+                            <constraint firstItem="eaR-30-uqc" firstAttribute="height" secondItem="JKO-DY-TVe" secondAttribute="height" multiplier="0.12" id="zKU-qy-AK6"/>
+                            <constraint firstItem="JKO-DY-TVe" firstAttribute="leading" secondItem="ud0-Lc-ggW" secondAttribute="trailing" constant="-120" id="zdz-qp-nkg"/>
+                            <constraint firstAttribute="trailing" secondItem="8Bi-Cj-wPa" secondAttribute="trailing" constant="16" id="zm4-Ex-qmK"/>
+                            <constraint firstItem="ZwV-MC-lCy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="zrv-Nk-Oe2"/>
+                            <constraint firstItem="Ylj-cG-Ixb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="zvQ-vL-oSn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zdz-qp-nkg"/>
+                                <exclude reference="Vbw-dR-2Xw"/>
+                                <exclude reference="egI-RT-r3O"/>
+                                <exclude reference="Qeu-En-Pvx"/>
+                                <exclude reference="9tR-br-BGT"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Tips Caculator" id="Xxl-bJ-c0L"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="bottomTotalBill" destination="euP-KI-XZj" id="V2b-EF-GyF"/>
+                        <outlet property="heightOfTotalBill" destination="7s0-0O-UJK" id="3Hd-KF-TBd"/>
+                        <outlet property="lblCustomNumber" destination="pYq-3k-e2D" id="h5J-ht-sTq"/>
+                        <outlet property="lblTipAmount" destination="0ul-Za-mGK" id="ecz-KF-6aq"/>
+                        <outlet property="lblTipCustom" destination="V92-l9-oQh" id="UqL-l8-pDz"/>
+                        <outlet property="lblTipOne" destination="uAR-qQ-NeF" id="8h5-a0-GT2"/>
+                        <outlet property="lblTipThree" destination="gHJ-Yq-9DF" id="3Td-uy-zPq"/>
+                        <outlet property="lblTipTwo" destination="8Bi-Cj-wPa" id="BIb-Y2-OcI"/>
+                        <outlet property="lblTotal" destination="ud0-Lc-ggW" id="928-Co-FQB"/>
+                        <outlet property="segmentPercent" destination="3Oy-eY-tfV" id="miw-sH-8U2"/>
+                        <outlet property="trailingTipCustom" destination="whs-CM-CR5" id="Kdf-vy-v6h"/>
+                        <outlet property="trailingTipThree" destination="Cbg-kj-pae" id="c8g-bH-wTF"/>
+                        <outlet property="trailingTipTwo" destination="zm4-Ex-qmK" id="Ag5-T5-JhQ"/>
+                        <outlet property="trailingViewTotalBill" destination="VKN-NB-r9I" id="EUr-sc-rSk"/>
+                        <outlet property="txtTotalBill" destination="Usl-gL-2SY" id="vaP-sG-Abs"/>
+                        <outlet property="viewCustom" destination="eaR-30-uqc" id="qJM-7H-g8E"/>
+                        <outlet property="viewOne" destination="ZwV-MC-lCy" id="ycY-iC-OH5"/>
+                        <outlet property="viewThree" destination="xkz-Ac-GPV" id="E1n-2u-es2"/>
+                        <outlet property="viewTwo" destination="BFd-wk-Nwa" id="KWN-yJ-NsL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="TRX-XB-9aR">
+                    <connections>
+                        <action selector="touchToEdit:" destination="BYZ-38-t0r" id="58t-0h-Gxl"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="312" y="335"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="RpS-K6-UW5">
+            <objects>
+                <viewController id="App-5s-gn1" customClass="SettingViewController" customModule="Tips" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="maj-ci-mxk"/>
+                        <viewControllerLayoutGuide type="bottom" id="2ag-xd-duH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VB8-6a-922">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" translatesAutoresizingMaskIntoConstraints="NO" id="MVq-7W-Sk8" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="75" y="199" width="170" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="0j0-Yj-da1"/>
+                                    <constraint firstAttribute="height" constant="170" id="dqf-cj-qj8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                        <real key="value" value="360"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="repeatCount">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pe2-hX-nsY" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="8" y="28" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="31l-UW-6I4"/>
+                                    <constraint firstAttribute="width" constant="30" id="IIg-Lz-fao"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="shake"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                        <real key="value" value="180"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeIn"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnBack:" destination="App-5s-gn1" eventType="touchUpInside" id="wFd-jI-f0O"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SETTING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miO-uh-Mvv" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="124" y="24" width="72" height="28"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="0.4039215686" green="0.6588235294" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CxD-DE-A1T">
+                                <rect key="frame" x="8" y="74" width="304" height="138"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="mNC-RN-CJ0" customClass="SpringImageView" customModule="Spring">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="138"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeDown"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                                <real key="value" value="360"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Default Percent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="226-YC-6Ir" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="16" y="16" width="113" height="30"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
+                                        <color key="textColor" red="0.1333333333" green="0.61176470589999998" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeUp"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="0.20000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Custom Percent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plm-ga-mlT" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="16" y="94" width="116" height="28"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
+                                        <color key="textColor" red="0.1333333333" green="0.61176470589999998" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeUp"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.59999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="0.20000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Custom Percent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sh4-gp-88J" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="16" y="56" width="116" height="28"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
+                                        <color key="textColor" red="0.1333333333" green="0.61176470589999998" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeUp"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.69999999999999996"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="0.20000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="15" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="95M-bT-kJe" customClass="SpringTextField" customModule="Spring">
+                                        <rect key="frame" x="16" y="16" width="264" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="YQ4-FZ-rvD"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.92941176469999998" green="0.33333333329999998" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.80000000000000004"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                                <real key="value" value="-90"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9TF-GX-PI0" customClass="SpringTextField" customModule="Spring">
+                                        <rect key="frame" x="16" y="54" width="264" height="30"/>
+                                        <color key="textColor" red="0.92941176469999998" green="0.33333333329999998" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideRight"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.90000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                                <real key="value" value="90"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="20" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zgb-9i-y1n" customClass="SpringTextField" customModule="Spring">
+                                        <rect key="frame" x="16" y="92" width="264" height="30"/>
+                                        <color key="textColor" red="0.92941176469999998" green="0.33333333329999998" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeIn"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="226-YC-6Ir" firstAttribute="top" secondItem="CxD-DE-A1T" secondAttribute="top" constant="16" id="3pd-67-gGk"/>
+                                    <constraint firstItem="plm-ga-mlT" firstAttribute="leading" secondItem="CxD-DE-A1T" secondAttribute="leading" constant="16" id="4Rt-3R-vgi"/>
+                                    <constraint firstItem="mNC-RN-CJ0" firstAttribute="top" secondItem="CxD-DE-A1T" secondAttribute="top" id="C8L-gp-O71"/>
+                                    <constraint firstItem="9TF-GX-PI0" firstAttribute="height" secondItem="95M-bT-kJe" secondAttribute="height" id="DJV-jn-KTK"/>
+                                    <constraint firstItem="9TF-GX-PI0" firstAttribute="baseline" secondItem="Sh4-gp-88J" secondAttribute="baseline" id="E3D-b8-pcN"/>
+                                    <constraint firstItem="9TF-GX-PI0" firstAttribute="width" secondItem="95M-bT-kJe" secondAttribute="width" id="HG5-oR-ImX"/>
+                                    <constraint firstItem="zgb-9i-y1n" firstAttribute="top" secondItem="9TF-GX-PI0" secondAttribute="bottom" constant="8" id="IFH-uj-zkp"/>
+                                    <constraint firstAttribute="trailing" secondItem="mNC-RN-CJ0" secondAttribute="trailing" id="Kr8-Wx-NfS"/>
+                                    <constraint firstItem="95M-bT-kJe" firstAttribute="baseline" secondItem="226-YC-6Ir" secondAttribute="baseline" id="Lga-iq-2pU"/>
+                                    <constraint firstItem="mNC-RN-CJ0" firstAttribute="leading" secondItem="CxD-DE-A1T" secondAttribute="leading" id="MVV-gV-Gx6"/>
+                                    <constraint firstItem="Sh4-gp-88J" firstAttribute="leading" secondItem="CxD-DE-A1T" secondAttribute="leading" constant="16" id="Wyu-be-KCx"/>
+                                    <constraint firstItem="zgb-9i-y1n" firstAttribute="width" secondItem="95M-bT-kJe" secondAttribute="width" id="X73-Q7-Zod"/>
+                                    <constraint firstItem="95M-bT-kJe" firstAttribute="leading" secondItem="CxD-DE-A1T" secondAttribute="leading" constant="16" id="XN9-4h-YTV"/>
+                                    <constraint firstItem="226-YC-6Ir" firstAttribute="leading" secondItem="CxD-DE-A1T" secondAttribute="leading" constant="16" id="YXG-AE-tyv"/>
+                                    <constraint firstAttribute="bottom" secondItem="mNC-RN-CJ0" secondAttribute="bottom" id="YZC-Tp-4GS"/>
+                                    <constraint firstAttribute="trailing" secondItem="zgb-9i-y1n" secondAttribute="trailing" constant="24" id="ZwK-iO-ehV"/>
+                                    <constraint firstItem="zgb-9i-y1n" firstAttribute="baseline" secondItem="plm-ga-mlT" secondAttribute="baseline" id="a8K-z4-XTh"/>
+                                    <constraint firstItem="95M-bT-kJe" firstAttribute="leading" secondItem="226-YC-6Ir" secondAttribute="trailing" constant="16" id="bDA-7y-x9T"/>
+                                    <constraint firstAttribute="trailing" secondItem="95M-bT-kJe" secondAttribute="trailing" constant="24" id="bGD-Y0-3yZ"/>
+                                    <constraint firstItem="226-YC-6Ir" firstAttribute="leading" secondItem="CxD-DE-A1T" secondAttribute="leading" constant="8" id="iY6-zP-c7C"/>
+                                    <constraint firstItem="zgb-9i-y1n" firstAttribute="height" secondItem="95M-bT-kJe" secondAttribute="height" id="jUt-jK-ATl"/>
+                                    <constraint firstItem="95M-bT-kJe" firstAttribute="top" secondItem="CxD-DE-A1T" secondAttribute="top" constant="16" id="jwi-yZ-3Nk"/>
+                                    <constraint firstItem="9TF-GX-PI0" firstAttribute="top" secondItem="95M-bT-kJe" secondAttribute="bottom" constant="8" id="rv5-P9-Ojc"/>
+                                    <constraint firstAttribute="trailing" secondItem="9TF-GX-PI0" secondAttribute="trailing" constant="24" id="waF-QY-1Qo"/>
+                                    <constraint firstAttribute="height" constant="138" id="y9n-pa-4Jj"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="iY6-zP-c7C"/>
+                                        <exclude reference="bDA-7y-x9T"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" translatesAutoresizingMaskIntoConstraints="NO" id="H3x-2g-cmv" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="172" y="358" width="135" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="PDd-DR-7XG"/>
+                                    <constraint firstAttribute="height" constant="135" id="faB-oT-l2G"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                        <real key="value" value="-360"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="repeatCount">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqa-6f-ywM">
+                                <rect key="frame" x="8" y="228" width="304" height="62"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="gJd-OC-sdC" customClass="SpringImageView" customModule="Spring">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="62"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeDown"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                                <real key="value" value="360"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Person Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Req-yX-Z6C" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="16" y="19" width="113" height="28"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
+                                        <color key="textColor" red="0.1333333333" green="0.61176470589999998" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.80000000000000004"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="0.20000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeUp"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y6g-N6-RAP" customClass="SpringTextField" customModule="Spring">
+                                        <rect key="frame" x="16" y="16" width="264" height="30"/>
+                                        <color key="textColor" red="0.92941176469999998" green="0.33333333329999998" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="1.1000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="x">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="y">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeIn"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="y6g-N6-RAP" secondAttribute="trailing" constant="24" id="APD-oj-aM6"/>
+                                    <constraint firstAttribute="trailing" secondItem="gJd-OC-sdC" secondAttribute="trailing" id="C1F-wz-Czb"/>
+                                    <constraint firstItem="gJd-OC-sdC" firstAttribute="leading" secondItem="wqa-6f-ywM" secondAttribute="leading" id="FES-Mw-5Iu"/>
+                                    <constraint firstAttribute="bottom" secondItem="gJd-OC-sdC" secondAttribute="bottom" id="KNl-kS-8GH"/>
+                                    <constraint firstItem="gJd-OC-sdC" firstAttribute="top" secondItem="wqa-6f-ywM" secondAttribute="top" id="Os7-ei-QGI"/>
+                                    <constraint firstItem="y6g-N6-RAP" firstAttribute="leading" secondItem="Req-yX-Z6C" secondAttribute="trailing" constant="24" id="QrB-nh-QxM"/>
+                                    <constraint firstAttribute="trailing" secondItem="y6g-N6-RAP" secondAttribute="trailing" constant="24" id="Uf8-7S-1Ow"/>
+                                    <constraint firstItem="y6g-N6-RAP" firstAttribute="top" secondItem="wqa-6f-ywM" secondAttribute="top" constant="16" id="e1x-ez-TsL"/>
+                                    <constraint firstAttribute="bottom" secondItem="y6g-N6-RAP" secondAttribute="bottom" constant="16" id="fYj-d8-PUZ"/>
+                                    <constraint firstAttribute="height" constant="62" id="gRK-Db-JbO"/>
+                                    <constraint firstItem="Req-yX-Z6C" firstAttribute="leading" secondItem="wqa-6f-ywM" secondAttribute="leading" constant="16" id="lt4-dh-H1Q"/>
+                                    <constraint firstItem="y6g-N6-RAP" firstAttribute="baseline" secondItem="Req-yX-Z6C" secondAttribute="baseline" id="lxY-8D-Wht"/>
+                                    <constraint firstItem="y6g-N6-RAP" firstAttribute="leading" secondItem="wqa-6f-ywM" secondAttribute="leading" constant="16" id="x5u-Ov-Jjv"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QrB-nh-QxM"/>
+                                        <exclude reference="Uf8-7S-1Ow"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" translatesAutoresizingMaskIntoConstraints="NO" id="hYl-Fx-Yv4" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="68" y="392" width="68" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="OU5-mU-QYh"/>
+                                    <constraint firstAttribute="height" constant="68" id="UFJ-s0-Gz7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                        <real key="value" value="-360"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="repeatCount">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CxD-DE-A1T" firstAttribute="leading" secondItem="VB8-6a-922" secondAttribute="leading" constant="8" id="2lB-qL-SGL"/>
+                            <constraint firstItem="miO-uh-Mvv" firstAttribute="top" secondItem="VB8-6a-922" secondAttribute="top" constant="24" id="DNy-Z1-t5l"/>
+                            <constraint firstItem="pe2-hX-nsY" firstAttribute="top" secondItem="maj-ci-mxk" secondAttribute="bottom" constant="8" id="IR6-Xr-J2G"/>
+                            <constraint firstItem="hYl-Fx-Yv4" firstAttribute="top" secondItem="MVq-7W-Sk8" secondAttribute="bottom" constant="23" id="Jyj-5k-EtN"/>
+                            <constraint firstAttribute="trailing" secondItem="CxD-DE-A1T" secondAttribute="trailing" constant="8" id="KUm-Qf-aQi"/>
+                            <constraint firstItem="H3x-2g-cmv" firstAttribute="leading" secondItem="hYl-Fx-Yv4" secondAttribute="trailing" constant="36" id="UOi-LG-5Qb"/>
+                            <constraint firstAttribute="trailing" secondItem="wqa-6f-ywM" secondAttribute="trailing" constant="8" id="UtB-Gf-mc6"/>
+                            <constraint firstItem="wqa-6f-ywM" firstAttribute="leading" secondItem="VB8-6a-922" secondAttribute="leading" constant="8" id="VpI-Rn-G8U"/>
+                            <constraint firstItem="miO-uh-Mvv" firstAttribute="centerX" secondItem="VB8-6a-922" secondAttribute="centerX" id="auU-lK-rZO"/>
+                            <constraint firstItem="H3x-2g-cmv" firstAttribute="top" secondItem="MVq-7W-Sk8" secondAttribute="bottom" constant="-11" id="caP-uh-ye6"/>
+                            <constraint firstItem="CxD-DE-A1T" firstAttribute="top" secondItem="pe2-hX-nsY" secondAttribute="bottom" constant="16" id="cxE-NT-eNz"/>
+                            <constraint firstAttribute="trailing" secondItem="H3x-2g-cmv" secondAttribute="trailing" constant="13" id="gtF-nA-RBt"/>
+                            <constraint firstItem="MVq-7W-Sk8" firstAttribute="centerY" secondItem="VB8-6a-922" secondAttribute="centerY" id="lZJ-dt-9Zs"/>
+                            <constraint firstItem="pe2-hX-nsY" firstAttribute="leading" secondItem="VB8-6a-922" secondAttribute="leading" constant="8" id="mAI-4o-mBO"/>
+                            <constraint firstItem="MVq-7W-Sk8" firstAttribute="centerX" secondItem="VB8-6a-922" secondAttribute="centerX" id="oWG-Q8-BHk"/>
+                            <constraint firstItem="wqa-6f-ywM" firstAttribute="top" secondItem="CxD-DE-A1T" secondAttribute="bottom" constant="16" id="wbg-Sb-Yvn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lPn-8n-PO1"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="txtCustom1" destination="9TF-GX-PI0" id="wOh-EO-xl9"/>
+                        <outlet property="txtCustom2" destination="zgb-9i-y1n" id="DDK-Ob-fgr"/>
+                        <outlet property="txtDefault" destination="95M-bT-kJe" id="5ZW-1f-St1"/>
+                        <outlet property="txtPerson" destination="y6g-N6-RAP" id="fMR-Jp-eog"/>
+                        <outlet property="viewPercent" destination="CxD-DE-A1T" id="HZF-JU-DHF"/>
+                        <outlet property="viewPerson" destination="wqa-6f-ywM" id="M5l-2R-rCg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Kk-7w-RiX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="688" y="335"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="boE-Mw-82l">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="cdg-y1-BbV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zsY-60-gQK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rnP-Hr-R8q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GOX-HK-bmx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57" y="335"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back" width="128" height="128"/>
+        <image name="bg-sunny-cloud-1" width="159" height="50"/>
+        <image name="bg-sunny-cloud-2" width="138" height="49"/>
+        <image name="bg-sunny-cloud-3" width="74" height="35"/>
+        <image name="bg-sunny-cloud-4" width="115" height="50"/>
+        <image name="frame" width="300" height="101"/>
+        <image name="people" width="50" height="59"/>
+        <image name="setting" width="50" height="50"/>
+        <image name="settings" width="128" height="128"/>
+        <image name="skype.png" width="314" height="558"/>
+    </resources>
 </document>
